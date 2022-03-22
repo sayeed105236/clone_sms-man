@@ -29,6 +29,23 @@ class HomeController extends Controller
      }
      public function adminHome()
      {
-         return view('pages.Admin.index');
+       $client = new \GuzzleHttp\Client();
+       $token= 'J3sooaUiwplGWsJ4ICvHhi34OXORYkuE';
+       $headers = [
+           // 'Authorization' => 'Bearer ' . $api_key,
+           'Accept'        => 'application/json',
+       ];
+       //Duplicate these three lines for calling other api
+       $balance_api = $client->request('GET','http://api.sms-man.com/control/get-balance?token=J3sooaUiwplGWsJ4ICvHhi34OXORYkuE', [
+               'headers' => $headers
+          ]);
+
+
+     $balance_api=$balance_api->getBody()->getContents();
+
+     $data = json_decode($balance_api, true);
+     
+
+         return view('pages.Admin.index',compact('data'));
      }
 }

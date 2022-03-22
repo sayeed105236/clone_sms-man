@@ -12,7 +12,7 @@
                             <div class="card bg-primary text-white">
                                 <div class="card-body">
                                     <h3 class="card-title text-white">Total Balance</h3>
-                                    <h1 class="card-text">500$</h1>
+                                    <h1 class="card-text">  {{$data['balance']/104}}$</h1>
                                 </div>
                             </div>
                         </div>

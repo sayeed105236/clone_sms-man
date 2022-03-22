@@ -36,7 +36,13 @@
             <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('admin.home')}}"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboard</span><span class="badge badge-light-warning badge-pill ml-auto mr-1"></span></a>
 
             </li>
-          
+            <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('countries')}}"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Country Lists</span><span class="badge badge-light-warning badge-pill ml-auto mr-1"></span></a>
+
+            </li>
+            <li class=" nav-item"><a class="d-flex align-items-center" href="{{route('applications')}}"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Apllication Lists</span><span class="badge badge-light-warning badge-pill ml-auto mr-1"></span></a>
+
+            </li>
+
 
         </ul>
     </div>
